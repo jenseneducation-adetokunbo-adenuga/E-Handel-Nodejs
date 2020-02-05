@@ -59,7 +59,7 @@
   
   // Operate get all products
   
-  app.get("/api/product", async (response) => {
+  app.get("/api/product", async (request, response) => {
     const data = await getProducts();
     response.send(data);
   });
